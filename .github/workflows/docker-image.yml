@@ -37,13 +37,13 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "NEW VERSION: $NEW_VERSION!!!!"
     
-    # - name: Build Docker Image
-    #   run:  |
-    #     docker build -t hector14/docker-graphql-2:0.0.2 .
-    #     docker build -t hector14/docker-graphql-2:latest .
-    # - name: Push Docker Image
-    #   run:  |
-    #     docker push hector14/docker-graphql-2:0.0.2
-    #     docker push hector14/docker-graphql-2:latest
+    - name: Build Docker Image
+      run:  |
+        docker build -t hector14/docker-graphql-2:0.0.2 .
+        docker build -t hector14/docker-graphql-2:latest .
+    - name: Push Docker Image
+      run:  |
+        docker push hector14/docker-graphql-2:0.0.2
+        docker push hector14/docker-graphql-2:latest
 #    - name: Build the Docker image
 #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
