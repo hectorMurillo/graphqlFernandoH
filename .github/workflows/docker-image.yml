@@ -51,3 +51,5 @@ jobs:
         docker push hector14/docker-graphql-2:latest
 #    - name: Build the Docker image
 #     run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+
+
